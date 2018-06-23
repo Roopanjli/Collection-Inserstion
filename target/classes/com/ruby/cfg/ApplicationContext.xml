@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="student" class="com.ruby.bean.Student">
+<property name="marks">
+<list>
+<value>30</value>
+<value> 40</value>
+<value> 50</value>
+</list>
+</property>
+<property name="course">
+<set>
+<value>ECE</value>
+<value> CSE</value>
+<value> MECH</value>
+</set>
+</property>
+<property name="name">
+<map>
+<entry>
+<key>
+<value>123</value>
+</key>
+<value>Raju</value>
+</entry>
+<entry key="900">
+<value>Vaib</value>
+</entry>
+<entry key="420" value="Ruby"></entry>
+</map>
+</property>
+<property name="address">
+<props>
+<prop key="110045">Sitapuri</prop>
+<prop key="110050"> MahavirEnclave</prop>
+<prop key="2002001">Aligarh</prop>
+</props>
+
+</property>
+</bean>
+
+</beans>
